@@ -1,0 +1,2 @@
+# This file disables Jekyll processing on GitHub Pages, ensuring that static
+# HTML files like index.html are served without being interpreted as Markdown.
