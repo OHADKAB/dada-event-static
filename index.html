@@ -1,120 +1,199 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>DADA Event</title>
-  <!-- Tailwind CSS CDN -->
-  <script src="https://cdn.tailwindcss.com"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DADA Event Coverage</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
-<body class="bg-black text-white font-sans">
-  <!-- Hero Section -->
-  <header class="relative h-screen flex items-center justify-center">
-    <img src="hero.jpg" alt="Hero Image" class="absolute inset-0 w-full h-full object-cover">
-    <div class="relative z-10 text-center px-4">
-      <img src="logo.png" alt="DADA Studio Logo" class="mx-auto mb-8 max-h-48">
-      <h1 class="text-4xl md:text-6xl font-bold uppercase">Event Photo &amp; Video Studio</h1>
-    </div>
-    <div class="absolute inset-0 bg-black opacity-50"></div>
-  </header>
-  <!-- Packages Section -->
-  <section class="py-20 px-4 md:px-10">
-    <h2 class="text-3xl md:text-4xl font-bold text-center mb-10">Event Coverage Packages</h2>
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-      <!-- Package 1 -->
-      <div class="border border-green-600 p-6 rounded-lg">
-        <h3 class="text-xl font-semibold mb-4">Tier I Focus</h3>
-        <ul class="mb-4 space-y-2 text-sm">
-          <li>1 Camera / Photographer</li>
-          <li>Coverage (4 hours)</li>
-          <li>48 Hour Delivery</li>
-          <li>1 Round of Photo Revisions</li>
-        </ul>
-        <div class="text-center text-2xl font-bold">$2,250+</div>
-      </div>
-      <!-- Package 2 -->
-      <div class="border border-green-600 p-6 rounded-lg">
-        <h3 class="text-xl font-semibold mb-4">Tier II Flow</h3>
-        <ul class="mb-4 space-y-2 text-sm">
-          <li>2 Cameras / Photographers</li>
-          <li>Coverage (6 hours)</li>
-          <li>48 Hour Delivery</li>
-          <li>1 Round of Photo Revisions</li>
-        </ul>
-        <div class="text-center text-2xl font-bold">$3,500+</div>
-      </div>
-      <!-- Package 3 -->
-      <div class="border border-green-600 p-6 rounded-lg">
-        <h3 class="text-xl font-semibold mb-4">Tier III Experience</h3>
-        <ul class="mb-4 space-y-2 text-sm">
-          <li>3 Cameras / Photographers</li>
-          <li>Coverage (8 hours)</li>
-          <li>48 Hour Delivery</li>
-          <li>1 Round of Photo Revisions</li>
-        </ul>
-        <div class="text-center text-2xl font-bold">Upon Request</div>
-      </div>
+<body id="top">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="overlay"></div>
+    <div class="hero-content fade-section">
+      <h1>DADA Event Coverage</h1>
+      <p>Capture every moment with our professional photo &amp; video services.</p>
+      <a href="#packages" class="cta">Explore Packages</a>
     </div>
   </section>
-  <!-- Creative A La Carte Services -->
-  <section class="py-20 px-4 md:px-10 bg-gray-900">
-    <h2 class="text-3xl md:text-4xl font-bold text-center mb-10">Creative A La Carte Services</h2>
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-      <div class="border border-green-600 p-6 rounded-lg">
-        <h3 class="text-lg font-semibold mb-2">Photobooth (Headshot Station)</h3>
-        <div class="text-right text-lg font-bold mb-2">$3,500+</div>
-        <p class="text-sm">A professional, interactive station for high-quality guest headshots and fun, branded takeaways.</p>
-      </div>
-      <div class="border border-green-600 p-6 rounded-lg">
-        <h3 class="text-lg font-semibold mb-2">Live On-Site Editor (Photo &amp; Video)</h3>
-        <div class="text-right text-lg font-bold mb-2">$2,000+</div>
-        <p class="text-sm">A dedicated photo editor on-site to select, retouch, and deliver a stream of high-quality photos during the event. A separate dedicated video editor creates a short, high-quality video (SD) for immediate social sharing.</p>
-      </div>
-      <div class="border border-green-600 p-6 rounded-lg">
-        <h3 class="text-lg font-semibold mb-2">Live Streaming Production</h3>
-        <div class="text-right text-lg font-bold mb-2">Upon Request</div>
-        <p class="text-sm">Professional multi-camera setup for broadcasting key sessions and speeches to a global, remote audience.</p>
-      </div>
-      <div class="border border-green-600 p-6 rounded-lg">
-        <h3 class="text-lg font-semibold mb-2">Visual Asset Library</h3>
-        <div class="text-right text-lg font-bold mb-2">$1,000+</div>
-        <p class="text-sm">Building a pre-sorted, high-resolution photo library for marketing and social media use (banks).</p>
-      </div>
-      <div class="border border-green-600 p-6 rounded-lg">
-        <h3 class="text-lg font-semibold mb-2">Micro-Content Hub (4 additional clips)</h3>
-        <div class="text-right text-lg font-bold mb-2">$1,500+</div>
-        <p class="text-sm">Creation of 4 additional 30-second clips optimized for platforms like TikTok and Instagram Reels.</p>
-      </div>
-      <div class="border border-green-600 p-6 rounded-lg">
-        <h3 class="text-lg font-semibold mb-2">Pre-Event “Meet the Speaker” Videos</h3>
-        <div class="text-right text-lg font-bold mb-2">$2,500+</div>
-        <p class="text-sm">Production of short, engaging videos featuring key speakers to promote the event before it starts.</p>
-      </div>
+
+  <!-- PACKAGES -->
+  <section id="packages" class="packages fade-section">
+    <h2>Event Coverage Packages</h2>
+
+    <div class="package">
+      <h3>TIER I FOCUS</h3>
+      <p class="tagline">Essential coverage for intimate events.</p>
+      <p>
+        Ideal for small gatherings needing a single professional capturing all key moments.
+      </p>
+      <ul>
+        <li>1 Camera / Photographer</li>
+        <li>Coverage (4 hours)</li>
+        <li>48 Hour Delivery</li>
+        <li>1 Round of Photo Revisions</li>
+      </ul>
+      <p class="price">$2,250+</p>
+    </div>
+
+    <div class="package">
+      <h3>TIER II FLOW</h3>
+      <p class="tagline">Enhanced coverage for dynamic events.</p>
+      <p>
+        Perfect for medium-sized events requiring two photographers to capture multiple angles.
+      </p>
+      <ul>
+        <li>2 Cameras / Photographers</li>
+        <li>Coverage (6 hours)</li>
+        <li>48 Hour Delivery</li>
+        <li>1 Round of Photo Revisions</li>
+      </ul>
+      <p class="price">$3,500+</p>
+    </div>
+
+    <div class="package">
+      <h3>TIER III EXPERIENCE</h3>
+      <p class="tagline">Comprehensive storytelling for your biggest events.</p>
+      <p>
+        For large-scale occasions where every detail matters and multiple perspectives are needed.
+      </p>
+      <ul>
+        <li>3 Cameras / Photographers</li>
+        <li>Coverage (8 hours)</li>
+        <li>48 Hour Delivery</li>
+        <li>1 Round of Photo Revisions</li>
+      </ul>
+      <p class="price">Upon Request</p>
     </div>
   </section>
-  <!-- About Section -->
-  <section class="py-20 px-4 md:px-10 text-center">
-    <h2 class="text-3xl md:text-4xl font-bold mb-6">About</h2>
-    <p class="max-w-3xl mx-auto text-sm">At DADA Studio, we specialize in visual storytelling that connects people, brands, and ideas. Founded in New York by photographer Ohad Kab, our work blends artistry and precision &amp;mdash; creating timeless portraits, refined imagery, and memorable experiences for modern brands.</p>
+
+  <!-- A LA CARTE SERVICES -->
+  <section class="packages fade-section">
+    <h2>Creative A La Carte Services</h2>
+
+    <div class="package">
+      <h3>Photobooth (Headshot Station)</h3>
+      <p class="tagline"></p>
+      <p>
+        A professional, interactive station for high-quality guest headshots and fun, branded takeaways.
+      </p>
+      <p class="price">$3,500+</p>
+    </div>
+
+    <div class="package">
+      <h3>Live On-Site Editor (Photo &amp; Video)</h3>
+      <p class="tagline"></p>
+      <p>
+        A dedicated photo editor on-site to select, retouch, and deliver a stream of high-quality photos during the event. A separate dedicated video editor creates a short, high-quality video for immediate social sharing.
+      </p>
+      <p class="price">$2,000+</p>
+    </div>
+
+    <div class="package">
+      <h3>Live Streaming Production</h3>
+      <p class="tagline"></p>
+      <p>
+        Professional multi-camera setup for broadcasting key sessions and speeches to a global, remote audience.
+      </p>
+      <p class="price">Upon Request</p>
+    </div>
+
+    <div class="package">
+      <h3>Visual Asset Library</h3>
+      <p class="tagline"></p>
+      <p>
+        Building a pre-sorted, high-resolution photo library for marketing and social media use (banks).
+      </p>
+      <p class="price">$1,000+</p>
+    </div>
+
+    <div class="package">
+      <h3>Micro-Content Hub (4 additional clips)</h3>
+      <p class="tagline"></p>
+      <p>
+        Creation of 4 additional 30-second clips optimized for platforms like TikTok and Instagram Reels.
+      </p>
+      <p class="price">$1,500+</p>
+    </div>
+
+    <div class="package">
+      <h3>Pre-Event “Meet the Speaker” Videos</h3>
+      <p class="tagline"></p>
+      <p>
+        Production of short, engaging videos featuring key speakers to promote the event before it starts.
+      </p>
+      <p class="price">$2,500+</p>
+    </div>
   </section>
-  <!-- Get in Touch -->
-  <section class="py-20 px-4 md:px-10 bg-gray-900">
-    <h2 class="text-3xl md:text-4xl font-bold text-center mb-6">Get in Touch</h2>
-    <p class="text-center mb-8">We'd love to hear from you. Tell us about your company, your goals, or your next big idea.</p>
-    <form class="max-w-xl mx-auto space-y-4">
-      <input type="text" placeholder="Your Name" class="w-full p-3 rounded-md text-black" />
-      <input type="email" placeholder="Your Email" class="w-full p-3 rounded-md text-black" />
-      <textarea placeholder="What services are you interested in?" rows="4" class="w-full p-3 rounded-md text-black"></textarea>
-      <button type="submit" class="bg-green-600 hover:bg-green-700 text-white py-3 px-6 rounded-md w-full">Send Message</button>
+
+  <!-- ABOUT -->
+  <section class="about fade-section">
+    <h2>About</h2>
+    <p>
+      At DADA Studio, we specialize in visual storytelling that connects people, brands, and ideas.
+      Founded in New York by photographer Ohad Kab, our work blends artistry and precision —
+      creating timeless portraits, refined imagery, and memorable experiences for modern brands.
+    </p>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section fade-section">
+    <h2>Ready to capture your next event?</h2>
+    <a href="#contact" class="cta">Book Your Event</a>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="contact fade-section">
+    <h2>Get in Touch</h2>
+    <p>We’d love to hear from you. Tell us about your company, your goals, or your next big idea.</p>
+    <form action="#" method="POST" class="contact-form">
+      <div class="form-row">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="_replyto" placeholder="Your Email" required>
+      </div>
+      <div class="form-row">
+        <select name="package" required>
+          <option value="" disabled selected>Which package are you interested in?</option>
+          <option value="Tier I Focus">Tier I Focus</option>
+          <option value="Tier II Flow">Tier II Flow</option>
+          <option value="Tier III Experience">Tier III Experience</option>
+        </select>
+      </div>
+      <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit" class="cta">Send Message</button>
     </form>
   </section>
-  <!-- Footer -->
-  <footer class="py-8 text-center border-t border-gray-700">
-    <p class="text-sm">&copy; <span id="currentYear"></span> DADA Studio. All rights reserved.</p>
+
+  <!-- FOOTER -->
+  <footer class="fade-section">
+    <p>© 2025 DADA Studio. All rights reserved.</p>
   </footer>
+
+  <!-- BACK TO TOP -->
+  <button id="backToTop">↑</button>
+
+  <!-- SCRIPT -->
   <script>
-    document.getElementById('currentYear').textContent = new Date().getFullYear();
+    // Fade-in animation
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("visible");
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1 });
+    document.querySelectorAll(".fade-section").forEach(el => observer.observe(el));
+
+    // Back to top button
+    const backToTop = document.getElementById("backToTop");
+    window.addEventListener("scroll", () => {
+      backToTop.classList.toggle("show", window.scrollY > 300);
+    });
+    backToTop.addEventListener("click", () => {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    });
   </script>
 </body>
 </html>
